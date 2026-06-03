@@ -1,0 +1,24 @@
+#EXTM3U
+#EXTALB:MaharajaOS Astro Box Simulation
+
+#EXTINF:-1 tvg-id="AstroAwani" tvg-name="Astro Awani" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/awani.png" group-title="BERITA",Astro Awani
+https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=awani/number=501/index.m3u8
+
+#EXTINF:-1 tvg-id="8TV" tvg-name="8TV" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/8tv.png" group-title="HIBURAN",8TV
+https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=8tv/number=148/index.m3u8
+
+#EXTINF:-1 tvg-id="Nickelodeon" tvg-name="Nickelodeon" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickelodeon.png" group-title="KANAK-KANAK",Nickelodeon
+http://79.127.207.193/Nickelodeon/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Moonbug" tvg-name="Moonbug" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/moonbug.png" group-title="KANAK-KANAK",Moonbug
+https://dq2a9ghraf7sw.cloudfront.net/Moonbug.m3u8
+
+#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/cgtn.png" group-title="BERITA",CGTN
+https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=cgtn/number=503/index.m3u8
+
+#EXTINF:-1 tvg-id="BBCNews" tvg-name="BBC News" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/bbc.png" group-title="BERITA",BBC News
+https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=BBCnews/number=512/index.m3u8
+
+#EXTINF:-1 tvg-id="LoveNature" tvg-name="Love Nature" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/lovenature.png" group-title="DOKUMENTARI",Love Nature
+https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=lovenature/number=550/index.m3u8
+
