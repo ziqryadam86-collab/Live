@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>MaharajaOS Gatekeeper</title>
+    <script>
+        window.onload = function() {
+            // Skrip untuk pecahkan laluan URL folder (path-based auth)
+            var path = window.location.pathname;
+            
+            // Semak adakah URL mengandungi pass dan user yang betul
+            if (path.includes("pass=860821") && path.includes("user=adamlive")) {
+                
+                // Link Tubi Video Love Nature anda yang asal
+                var streamLink = "https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8";
+                
+                // Guna taktik proksi penstriman korporat untuk mengelakkan ralat video rosak
+                var secureProxy = "https://api.allorigins.win/raw?url=" + encodeURIComponent(streamLink);
+                
+                // Bawa player terus ke link yang sudah dibersihkan korupsinya!
+                window.location.href = secureProxy;
+                
+            } else {
+                document.body.innerHTML = "<h2 style='color:red; text-align:center; margin-top:20%'>[RALAT] AKSES DISEKAT: Kredensial MaharajaOS Tidak Sah!</h2>";
+            }
+        }
+    </script>
+</head>
+<body style="background:#111; color:#fff; font-family:sans-serif; text-align:center; padding-top:20%;">
+    <h3>🛡️ Sistem Keselamatan JavaScript MaharajaOS sedang memproses...</h3>
+</body>
+      </html>
+      
