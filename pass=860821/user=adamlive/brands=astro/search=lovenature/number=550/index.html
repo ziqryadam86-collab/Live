@@ -2,32 +2,28 @@
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <title>MaharajaOS Gatekeeper</title>
+    <title>MaharajaOS Love Nature Gatekeeper</title>
     <script>
         window.onload = function() {
-            // Skrip untuk pecahkan laluan URL folder (path-based auth)
+            // Mengambil struktur laluan URL (Path-based checking)
             var path = window.location.pathname;
             
-            // Semak adakah URL mengandungi pass dan user yang betul
+            // Sistem Pengesahan JavaScript Maharaja Adam
             if (path.includes("pass=860821") && path.includes("user=adamlive")) {
                 
-                // Link Tubi Video Love Nature anda yang asal
-                var streamLink = "https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8";
+                // Link asli Tubi Video Love Nature
+                var linkAsli = "https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8";
                 
-                // Guna taktik proksi penstriman korporat untuk mengelakkan ralat video rosak
-                var secureProxy = "https://api.allorigins.win/raw?url=" + encodeURIComponent(streamLink);
-                
-                // Bawa player terus ke link yang sudah dibersihkan korupsinya!
-                window.location.href = secureProxy;
+                // Trik hantar terus tanpa proksi luar yang suka 'timed out'
+                window.location.replace(linkAsli);
                 
             } else {
-                document.body.innerHTML = "<h2 style='color:red; text-align:center; margin-top:20%'>[RALAT] AKSES DISEKAT: Kredensial MaharajaOS Tidak Sah!</h2>";
+                document.body.innerHTML = "<h2 style='color:#ff4444; text-align:center; margin-top:20%'>[ACCESS DENIED] Kredensial MaharajaOS Tidak Sah!</h2>";
             }
         }
     </script>
 </head>
-<body style="background:#111; color:#fff; font-family:sans-serif; text-align:center; padding-top:20%;">
-    <h3>🛡️ Sistem Keselamatan JavaScript MaharajaOS sedang memproses...</h3>
+<body style="background:#0a0a0a; color:#fff; font-family:sans-serif; text-align:center; padding-top:20%;">
+    <h3>🛡️ JavaScript MaharajaOS sedang mengesahkan laluan suapan...</h3>
 </body>
-      </html>
-      
+</html>
