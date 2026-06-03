@@ -1,0 +1,13 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=390000,CODECS="avc1.4d0015,mp4a.40.2",RESOLUTION=426x240
+https://moonbug-rokuus.amagi.tv/playlist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1337000,CODECS="avc1.4d001e,mp4a.40.2",RESOLUTION=640x360
+https://moonbug-rokuus.amagi.tv/playlist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1390000,CODECS="avc1.4d001f,mp4a.40.2",RESOLUTION=854x480
+https://moonbug-rokuus.amagi.tv/playlist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3405200,CODECS="avc1.4d001f,mp4a.40.2",RESOLUTION=1280x720
+https://moonbug-rokuus.amagi.tv/playlist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=260520,CODECS="avc1.420015,mp4a.40.2",RESOLUTION=426x240
+https://moonbug-rokuus.amagi.tv/playlist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=64000,CODECS="avc1.42000B,mp4a.40.2",RESOLUTION=128x72
+https://moonbug-rokuus.amagi.tv/playlist.m3u8
