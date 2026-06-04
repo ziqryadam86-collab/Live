@@ -33,3 +33,7 @@ https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro
 
 #EXTINF:-1 tvg-id="Nick_Jr_HD" tvg-name="Nick Jr HD" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="KANAK-KANAK",Nick Jr HD
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=nickjr/number=636/index.m3u8
+
+#EXTINF:-1 tvg-id="Nick_Jr_HD_Kodi" tvg-name="Nick Jr HD (Kodi only MPD)" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="KANAK-KANAK",Nick Jr HD (Kodi MPD)
+#EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
+https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=nickjr/number=636/index.mpd
