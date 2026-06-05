@@ -1,0 +1,40 @@
+name: Pemburu Talian Radio Era Laluan Baharu
+
+on:
+  schedule:
+    # Berjalan secara automatik setiap 4 jam
+    - cron: '0 */4 * * *'
+  workflow_dispatch: # Butang manual untuk Adam test "Run" bila-bila masa
+
+jobs:
+  Ambil-Link-Dan-Update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Pasang Google Chrome & Selenium
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y chromium-browser
+        pip install selenium
+
+    # Jalankan skrip python yang berada di root directory tadi
+    - name: Jalankan Skrip Pemburu
+      run: python Era.py
+
+    # Robot push fail index.m3u8 yang baru dari folder pass=liveradio ke repo GitHub
+    - name: Push Fail Baru ke GitHub Repo
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action Bot"
+        git add pass=liveradio/user=alamradio/brands=astro/search=era/number=856/index.m3u8
+        git commit -m "🤖 Automasi: Fail index.m3u8 laluan liveradio berjaya dikemas kini" || exit 0
+        git push
+        
