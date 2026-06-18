@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns="urn:mpeg:dash:schema:mpd:2011"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd"
+     profiles="urn:mpeg:dash:profile:isoff-live:2011"
+     type="static">
+  
+  <Period id="1">
+    <AdaptationSet Remarks="Suntikan ClearKey DRM">
+      <ContentProtection schemeIdUri="urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b">
+        <clearkey:Laurl xmlns:clearkey="http://dashif.org/guidelines/clearKey">{"keys":[{"kty":"oct","kid":"60dc08aae52f4c0b806a8e43f24a12c8","k":"30d5b579966d822b215ec51a91d8a271"}]}</clearkey:Laurl>
+      </ContentProtection>
+      
+      <Subset contains="0" id="1"/>
+    </AdaptationSet>
+  </Period>
+</MPD>
