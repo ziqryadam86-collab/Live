@@ -1,0 +1,6 @@
+#EXTM3U
+#EXTINF:-1, TV3 Live
+#KODIP-DRM-TYPE="clearkey"
+#KODIP-DRM-KEY="60dc08aae52f4c0b806a8e43f24a12c8:30d5b579966d822b215ec51a91d8a271"
+#EXT-X-STREAM-INF:BANDWIDTH=390000,CODECS="avc1.4d0015,mp4a.40.2",RESOLUTION=426x240
+https://ngtv-live-cbj.gcdn.co/Content/DASH/Live/channel(TV3)/master.mpd
