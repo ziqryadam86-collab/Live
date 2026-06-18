@@ -1,3 +1,22 @@
+name: Kemaskini MPD Strim
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  update-stream:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Ambil Kod Repository
+      uses: actions/checkout@v4
+
+    - name: Jalankan Skrip Ekstrak
+      run: |
+        chmod +x skrip.sh
+        ./skrip.sh
+
     - name: Commit dan Push Jika Ada Perubahan
       run: |
         git config --local user.email "action@github.com"
