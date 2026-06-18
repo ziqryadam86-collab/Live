@@ -38,5 +38,15 @@ https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro
 #EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=nickjr/number=636/index.mpd
 
-#EXTINF:-1 tvg-id="tv3" tvg-name="tv3" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv3
+#EXTINF:-1 tvg-id="tv3" tvg-name="tv3" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv3 
 https://m3u.chanox97.workers.dev/49deb30a7e33d3ddf8ab292f_46eca8acca122c4b5c8ec57ca788ff37ec719c76dff21cdca4badbae81e948a0f5ac21f352dbb1b55ab2d313ba9157e2/tv3.m3u8
+
+#EXTINF:-1 tvg-id="tv3" tvg-name="tv3" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv3 server:1
+https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv3/number=103/index1.m3u8
+
+#EXTINF:-1 tvg-id="tv3" tvg-name="tv3" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv3 server:2
+https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv3/number=103/index2.m3u8
+
+#EXTINF:-1 tvg-id="tv3" tvg-name="tv3" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv3 server:3
+https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv3/number=103/index3.m3u8
+
