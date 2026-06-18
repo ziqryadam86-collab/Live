@@ -1,0 +1,27 @@
+name: Kemaskini MPD Strim
+
+on:
+  schedule:
+    # Berjalan setiap 5 minit
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Membolehkan anda tekan butang 'Run' secara manual
+
+jobs:
+  update-stream:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Ambil Kod Repository
+      uses: actions/checkout@v4
+
+    - name: Jalankan Skrip Ekstrak
+      run: |
+        chmod +x skrip.sh
+        ./skrip.sh
+
+    - name: Commit dan Push Jika Ada Perubahan
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add index.m3u8
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update MPD & DRM Key [$(date)]" && git push)
+        
