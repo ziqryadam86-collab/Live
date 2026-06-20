@@ -74,3 +74,5 @@ https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro
 #EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Master) auto resolution 
 https://d25tgymtnqzu8s.cloudfront.net/main/A0jyR3/master.m3u8?id=1
 
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="mytv", sukan+ auto
+https://d25tgymtnqzu8s.cloudfront.net/live/media0/sukan/HLS/sukan.m3u8?id=4
