@@ -56,21 +56,21 @@ https://infominyak.my/t/tv3.m3u8
 #EXTINF:-1 tvg-id="tv3" tvg-name="tv3" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv3 server:3
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv3/number=103/index3.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" tvg-logo="https://paddytv.epg.pm/logo/tv1.png" group-title="Astro", TV1 (Index)
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" tvg-logo="https://paddytv.epg.pm/logo/tv1.png" group-title="Astro", TV1 (Index) 1080p
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/index.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 1) 1080p
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 1) 720p
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/index1.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 2) 720p
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 2) 480p
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/index2.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 3) 480p
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 3) 360p
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/index3.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 4) 360p
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 4) 240p
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/index4.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Master) 240p 
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Master) auto resolution 
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/master.m3u8
 
