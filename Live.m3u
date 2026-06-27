@@ -1,78 +1,78 @@
 #EXTM3U
 #EXTALB:MaharajaOS Astro Box Simulation
 
-#EXTINF:-1 tvg-id="AstroAwani" tvg-name="Astro Awani" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/awani.png" group-title="BERITA",Astro Awani
+#EXTINF:-1 tvg-id="ASTROAWANI" tvg-name="ASTRO AWANI" group-title="BERITA",Astro Awani
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=awani/number=501/index.m3u8
 
-#EXTINF:-1 tvg-id="8TV" tvg-name="8TV" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/8tv.png" group-title="HIBURAN",8TV
+#EXTINF:-1 tvg-id="8TV" tvg-name="8TV" group-title="HIBURAN",8TV
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=8tv/number=148/index.m3u8
 
-#EXTINF:-1 tvg-id="Nickelodeon" tvg-name="Nickelodeon" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickelodeon.png" group-title="KANAK-KANAK",Nickelodeon
+#EXTINF:-1 tvg-id="NICKELODEON" tvg-name="NICKELODEON" group-title="KANAK-KANAK",Nickelodeon
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=NICKELODEON/number=616/index1.m3u8
 
-#EXTINF:-1 tvg-id="Moonbug" tvg-name="Moonbug" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/moonbug.png" group-title="KANAK-KANAK",Moonbug
+#EXTINF:-1 tvg-id="MOONBUG" tvg-name="MOONBUG" group-title="KANAK-KANAK",Moonbug
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=moonbug/number=618/index1.m3u8
 
-#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/cgtn.png" group-title="BERITA",CGTN
+#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" group-title="BERITA",CGTN
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=cgtn/number=503/index.m3u8
 
-#EXTINF:-1 tvg-id="BBCNews" tvg-name="BBC News" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/bbc.png" group-title="BERITA",BBC News
+#EXTINF:-1 tvg-id="BBCNEWS" tvg-name="BBC NEWS" group-title="BERITA",BBC News
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=BBCnews/number=512/index.m3u8
 
-#EXTINF:-1 tvg-id="LoveNature" tvg-name="Love Nature" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/lovenature.png" group-title="DOKUMENTARI",Love Nature
+#EXTINF:-1 tvg-id="LOVENATURE" tvg-name="LOVE NATURE" group-title="DOKUMENTARI",Love Nature
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=lovenature/number=550/index.m3u8
 
-#EXTINF:-1 tvg-id="beINSportsXTRA" tvg-name="beIN Sports XTRA (Auto Res)" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/beinsports.png" group-title="SUKAN",beIN Sports XTRA (Auto Res)
+#EXTINF:-1 tvg-id="BEINSPORTSXTRA" tvg-name="BEIN SPORTS XTRA" group-title="SUKAN",beIN Sports XTRA (Auto Res)
 https://ziqryadam86-collab.github.io/Live/pass-860821/user-adamlive/brands-astro/search-beinsportsxtra/number-819/index.m3u8
 
-#EXTINF:-1 tvg-id="beINSportsXTRA-1" tvg-name="beIN Sports XTRA (Lock 1080p)" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/beinsports.png" group-title="SUKAN",beIN Sports XTRA (Lock 1080p)
+#EXTINF:-1 tvg-id="BEINSPORTSXTRA" tvg-name="BEIN SPORTS XTRA" group-title="SUKAN",beIN Sports XTRA (Lock 1080p)
 https://ziqryadam86-collab.github.io/Live/pass-860821/user-adamlive/brands-astro/search-beinsportsxtra/number-819/index1.m3u8
 
-#EXTINF:-1 tvg-id="Cartoon_Network_HD" tvg-name="Cartoon Network HD" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/cartoonnetwork.png" group-title="KANAK-KANAK",Cartoon Network HD
+#EXTINF:-1 tvg-id="CARTOONNETWORK" tvg-name="CARTOON NETWORK HD" group-title="KANAK-KANAK",Cartoon Network HD
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=cartoonnetwork/number=615/index.m3u8
 
-#EXTINF:-1 tvg-id="Nick_Jr_HD" tvg-name="Nick Jr HD" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="KANAK-KANAK",Nick Jr HD
+#EXTINF:-1 tvg-id="NICKJR" tvg-name="NICK JR HD" group-title="KANAK-KANAK",Nick Jr HD
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=nickjr/number=636/index.m3u8
 
-#EXTINF:-1 tvg-id="tv9" tvg-name="Tv9" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv9
+#EXTINF:-1 tvg-id="TV9" tvg-name="TV9" group-title="DRAMA",Tv9
 https://tv3-livetonton-m3u8.ziqry-adam86.workers.dev/index1.m3u8
 
-#EXTINF:-1 tvg-id="tv9" tvg-name="Tv9" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv9 server:1
+#EXTINF:-1 tvg-id="TV9" tvg-name="TV9" group-title="DRAMA",Tv9 server:1
 https://tv3-livetonton-m3u8.ziqry-adam86.workers.dev/index2.m3u8
 
-#EXTINF:-1 tvg-id="Nick_Jr_HD_Kodi" tvg-name="Nick Jr HD (Kodi only MPD)" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="KANAK-KANAK",Nick Jr HD (Kodi MPD)
+#EXTINF:-1 tvg-id="NICKJR" tvg-name="NICK JR HD" group-title="KANAK-KANAK",Nick Jr HD (Kodi MPD)
 #EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=nickjr/number=636/index.mpd
 
-#EXTINF:-1 tvg-id="tv3" tvg-name="tv3" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv3 
+#EXTINF:-1 tvg-id="TV3" tvg-name="TV3" group-title="DRAMA",Tv3 
 https://m3u.chanox97.workers.dev/49deb30a7e33d3ddf8ab292f_46eca8acca122c4b5c8ec57ca788ff37ec719c76dff21cdca4badbae81e948a0f5ac21f352dbb1b55ab2d313ba9157e2/tv3.m3u8
 
-#EXTINF:-1 tvg-id="tv3" tvg-name="tv3" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv3 server:1
+#EXTINF:-1 tvg-id="TV3" tvg-name="TV3" group-title="DRAMA",Tv3 server:1
 https://on.1tv3.workers.dev/tv3.m3u8
 
-#EXTINF:-1 tvg-id="tv3" tvg-name="tv3" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv3 server:2
+#EXTINF:-1 tvg-id="TV3" tvg-name="TV3" group-title="DRAMA",Tv3 server:2
 https://infominyak.my/t/tv3.m3u8
 
-#EXTINF:-1 tvg-id="tv3" tvg-name="tv3" tvg-logo="https://raw.githubusercontent.com/ziqryadam86-collab/Live/main/logos/nickjr.png" group-title="drama",tv3 server:3
+#EXTINF:-1 tvg-id="TV3" tvg-name="TV3" group-title="DRAMA",Tv3 server:3
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv3/number=103/index3.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" tvg-logo="https://paddytv.epg.pm/logo/tv1.png" group-title="Astro", TV1 (Index) 1080p
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="ASTRO",Tv1 (Index) 1080p
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/index.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 1) 720p
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="ASTRO",Tv1 (Index 1) 720p
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/index1.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 2) 480p
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="ASTRO",Tv1 (Index 2) 480p
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/index2.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 3) 360p
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="ASTRO",Tv1 (Index 3) 360p
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/index3.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Index 4) 240p
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="ASTRO",Tv1 (Index 4) 240p
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=tv1/number=101/index4.m3u8
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="Astro", TV1 (Master) auto resolution 
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="ASTRO",Tv1 (Master) auto resolution 
 https://d25tgymtnqzu8s.cloudfront.net/main/A0jyR3/master.m3u8?id=1
 
-#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="mytv", sukan+ auto
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="mytv",sukan+ auto
 https://d25tgymtnqzu8s.cloudfront.net/live/media0/sukan/HLS/sukan.m3u8?id=4
