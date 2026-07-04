@@ -83,3 +83,4 @@ https://tiny-salad-ff3a.ziqry-adam86.workers.dev/index.mpd
 
 #EXTINF:-1 tvg-id="TV2" tvg-name="TV2" group-title="mytv",TV2 (Direct Stream)
 #EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
+https://tv2-rtm-apiassistant.ziqry-adam86.workers.dev/index.mpd
