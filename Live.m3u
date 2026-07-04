@@ -80,3 +80,7 @@ https://d25tgymtnqzu8s.cloudfront.net/live/media0/sukan/HLS/sukan.m3u8?id=4
 #EXTINF:-1 tvg-id="OKEY" tvg-name="OKEY" group-title="mytv",OKEY (Direct Stream)
 #EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
 https://tiny-salad-ff3a.ziqry-adam86.workers.dev/index.mpd
+
+#EXTINF:-1 tvg-id="TV2" tvg-name="TV2" tvg-logo="https://example.com/tv2.png" group-title="RTM",TV2 HD
+https://tv2-rtm-apiassistant.ziqry-adam86.workers.dev/index.mpd
+
