@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tukar tajuk pada tab pelayar web -->
+    <title>Malaysia IPTV (Free)</title>
+    
+    <!-- Google Fonts untuk gaya Futuristik -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #080810;
+            --panel-color: #101026;
+            --neon-cyan: #00f3ff;
+            --neon-magenta: #ff0055;
+            --text-color: #d1d1f0;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Rajdhani', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--neon-cyan);
+            text-shadow: 0 0 10px var(--neon-cyan);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Container Player Clappr */
+        .player-wrapper {
+            width: 100%;
+            max-width: 960px;
+            background: var(--panel-color);
+            border: 2px solid var(--neon-cyan);
+            box-shadow: 0 0 25px rgba(0, 243, 255, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            aspect-ratio: 16/9;
+            position: relative;
+        }
+
+        #player {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Mengubah suai elemen dalam Clappr menjadi Futuristik */
+        [data-player] .player-poster {
+            background-size: cover;
+        }
+        [data-player] .bar-fill {
+            background-color: var(--neon-cyan) !important;
+            box-shadow: 0 0 8px var(--neon-cyan);
+        }
+        [data-player] .bar-scrubber {
+            background-color: var(--neon-magenta) !important;
+            box-shadow: 0 0 10px var(--neon-magenta);
+        }
+        [data-player] .play-wrapper svg path {
+            fill: var(--neon-cyan) !important;
+        }
+
+        /* Playlist Section */
+        .playlist-box {
+            width: 100%;
+            max-width: 960px;
+            background: var(--panel-color);
+            border: 1px solid rgba(0, 243, 255, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .playlist-header {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            color: var(--neon-magenta);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 1px dashed rgba(255, 0, 85, 0.4);
+            padding-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .channel-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+
+        .channel-list::-webkit-scrollbar {
+            width: 6px;
+        }
+        .channel-list::-webkit-scrollbar-thumb {
+            background: var(--neon-cyan);
+            border-radius: 3px;
+        }
+
+        .channel-item {
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.02);
+            margin-bottom: 8px;
+            border-left: 3px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .channel-item:hover {
+            background: rgba(0, 243, 255, 0.08);
+            border-left-color: var(--neon-cyan);
+            padding-left: 20px;
+        }
+
+        .channel-item.active {
+            background: rgba(255, 0, 85, 0.15);
+            border-left-color: var(--neon-magenta);
+            color: #fff;
+            font-weight: bold;
+            box-shadow: inset 0 0 10px rgba(255, 0, 85, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tajuk Utama Utama Diubah ke MALAYSIA IPTV (FREE) -->
+    <h1>MALAYSIA IPTV (FREE)</h1>
+
+    <!-- Player Box -->
+    <div class="player-wrapper">
+        <div id="player"></div>
+    </div>
+
+    <!-- Playlist Box -->
+    <div class="playlist-box">
+        <div class="playlist-header">// SENARAI SALURAN / CHANNELS</div>
+        <ul id="channel-list" class="channel-list">
+            <li class="channel-item">Mengimbas rangkaian M3U...</li>
+        </ul>
+    </div>
+
+    <!-- Skrip Utama Clappr -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
+    <!-- Skrip Tambahan Clappr untuk Sokongan .mpd (DASH) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dash-shaka-playback@latest/dist/dash-shaka-playback.js"></script>
+
+    <script>
+        let clapprPlayer;
+        const m3uUrl = 'https://ziqryadam86-collab.github.io/Live/Live.m3u';
+
+        async function fetchM3U() {
+            try {
+                const response = await fetch(m3uUrl);
+                if (!response.ok) throw new Error('Respons rangkaian tidak OK');
+                const data = await response.text();
+                const channels = parseM3U(data);
+                setupPlaylist(channels);
+            } catch (error) {
+                console.error("Ralat:", error);
+                document.getElementById('channel-list').innerHTML = `<li class="channel-item" style="color: var(--neon-magenta)">RALAT: Gagal memuatkan sistem data M3U.</li>`;
+            }
+        }
+
+        function parseM3U(data) {
+            const lines = data.split('\n');
+            const channels = [];
+            let currentName = '';
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                if (line.startsWith('#EXTINF:')) {
+                    const commaIdx = line.lastIndexOf(',');
+                    currentName = commaIdx !== -1 ? line.substring(commaIdx + 1).trim() : 'Saluran Tanpa Nama';
+                } else if (line && !line.startsWith('#')) {
+                    channels.push({ name: currentName, url: line });
+                    currentName = '';
+                }
+            }
+            return channels;
+        }
+
+        function setupPlaylist(channels) {
+            const listEl = document.getElementById('channel-list');
+            listEl.innerHTML = '';
+
+            if(channels.length === 0) {
+                listEl.innerHTML = '<li class="channel-item">Tiada data saluran ditemui.</li>';
+                return;
+            }
+
+            channels.forEach((channel, index) => {
+                const li = document.createElement('li');
+                li.className = 'channel-item';
+                li.textContent = `${String(index + 1).padStart(2, '0')} 📡 ${channel.name}`;
+
+                li.addEventListener('click', () => {
+                    document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
+                    li.classList.add('active');
+                    changeStream(channel.url);
+                });
+
+                listEl.appendChild(li);
+            });
+
+            const firstItem = listEl.querySelector('.channel-item');
+            if (firstItem) {
+                firstItem.classList.add('active');
+                initClappr(channels[0].url);
+            }
+        }
+
+        function initClappr(url) {
+            clapprPlayer = new Clappr.Player({
+                source: url,
+                parentId: "#player",
+                plugins: [DashShakaPlayback],
+                width: '100%',
+                height: '100%',
+                autoPlay: true,
+                mute: false
+            });
+        }
+
+        function changeStream(url) {
+            if (clapprPlayer) {
+                clapprPlayer.load(url);
+                clapprPlayer.play();
+            }
+        }
+
+        fetchM3U();
+    </script>
+</body>
+</html>
+  
