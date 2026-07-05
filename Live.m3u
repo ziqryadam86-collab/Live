@@ -88,3 +88,7 @@ https://tv2-rtm-apiassistant.ziqry-adam86.workers.dev/index.mpd
 #EXTINF:-1 tvg-id="TVSUKAN" tvg-name="TVSUKAN" group-title="mytv",sukan+ (Direct Stream)
 #EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
 https://sukan-rtm-live.ziqry-adam86.workers.dev/index.mpd
+
+#EXTINF:-1 tvg-id="FreeMovies" tvg-name="FreeMovies" group-title="mytv",free-movies(Direct Stream)
+#EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
+https://free-movies.ziqry-adam86.workers.dev/index.mpd
