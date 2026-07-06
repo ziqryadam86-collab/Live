@@ -92,3 +92,7 @@ https://sukan-rtm-live.ziqry-adam86.workers.dev/index.mpd
 #EXTINF:-1 tvg-id="FreeMovies" tvg-name="FreeMovies" group-title="mytv",free-movies(Direct Stream)
 #EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
 https://free-movies.ziqry-adam86.workers.dev/index.mpd
+
+#EXTINF:-1 tvg-id="BERITARTM" tvg-name="BERITARTM" group-title="mytv",BERITARTM(Direct Stream)
+#EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
+https://berita-rtm.ziqry-adam86.workers.dev/index.mpd
