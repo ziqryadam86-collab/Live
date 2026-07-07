@@ -2,5 +2,8 @@
 #EXTALB:MaharajaOS Vod Simulation
 
 #EXTINF:-1 tvg-id="The Angry Birds Movie (2016)." tvg-name="The Angry Birds Movie (2016)." group-title="vod",The Angry Birds Movie (2016).
-https://vod1-movies-10m.ziqry-adam86.workers.dev/
+https://vod1-movies-10m.ziqry-adam86.workers.dev/index.mp4
+
+#EXTINF:-1 tvg-id="BoBoiBoy Movie 2(2019)™ | Full Movie in HD" tvg-name="BoBoiBoy Movie 2™ | Full Movie in HD(2019)" group-title="vod",BoBoiBoy Movie 2™ | Full Movie in HD(2019).
+https://vod2-live.ziqry-adam86.workers.dev/index.mp4
 
