@@ -1,0 +1,5 @@
+#EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2392187,CODECS="avc1.4D4029,mp4a.40.5",RESOLUTION=960x540,FRAME-RATE=25
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=eea0828c38d74407a5c384ad730d7224:250605c3d9734f7777e9c46fe5a6b176
+https://ngtv-live-cbj.gcdn.co/Content/DASH/Live/channel(TV9)/master.mpd
