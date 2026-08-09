@@ -96,3 +96,19 @@ https://free-movies.ziqry-adam86.workers.dev/index.mpd
 #EXTINF:-1 tvg-id="BERITARTM" tvg-name="BERITARTM" group-title="mytv",BERITARTM(Direct Stream)
 #EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
 https://berita-rtm.ziqry-adam86.workers.dev/index.mpd
+
+#EXTINF:-1 tvg-id="TV1" tvg-name="TV1" group-title="ASTRO",TV1 (Direct Stream)
+#EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/manifest.mpd
+
+#EXTINF:-1 tvg-id="TV2" tvg-name="TV2" group-title="ASTRO",TV2 (Direct Stream)2
+#EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/manifest.mpd
+
+#EXTINF:-1 tvg-id="OKEY" tvg-name="OKEY" group-title="ASTRO",OKEY (Direct Stream)2
+#EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
+https://d25tgymtnqzu8s.cloudfront.net/smil:okey/manifest.mpd
+
+#EXTINF:-1 tvg-id="BERITA" tvg-name="BERITA" group-title="ASTRO",BERITA (Direct Stream)2
+#EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
+https://d25tgymtnqzu8s.cloudfront.net/smil:berita/manifest.mpd
