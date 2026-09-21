@@ -112,3 +112,6 @@ https://d25tgymtnqzu8s.cloudfront.net/smil:okey/manifest.mpd
 #EXTINF:-1 tvg-id="BERITA" tvg-name="BERITA" group-title="ASTRO",BERITA (Direct Stream)2
 #EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
 https://d25tgymtnqzu8s.cloudfront.net/smil:berita/manifest.mpd
+
+#EXTINF:-1 tvg-id="youtube" tvg-name="youtube" group-title="youtube",upin ipin live 24 jam
+https://ziqryadam86-collab.github.io/live-youtube/live.m3u8
