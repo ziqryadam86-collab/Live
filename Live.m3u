@@ -332,3 +332,6 @@ https://22273.live.streamtheworld.com/SABAH_VFMAAC
 
 #EXTINF:-1 tvg-id="CNA" tvg-name="CNA Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/CNA_logo.svg/512px-CNA_logo.svg.png" group-title="BERITA",CNA Live
 https://ziqryadam86-collab.github.io/cna-live/cna.m3u8
+
+#EXTINF:-1 tvg-id="BeritaRTM" tvg-name="Berita RTM" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d2/Berita_RTM_logo_2020.png" group-title="BERITA",Berita RTM
+https://ziqryadam86-collab.github.io/rtm-live/smil:berita/index.m3u8
