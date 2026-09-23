@@ -330,5 +330,5 @@ https://22243.live.streamtheworld.com/MELAKA_FMAAC
 #EXTINF:-1 tvg-id="VFM" group-title="RADIO radio" radio="true" tvg-logo="https://rtmklik.rtm.gov.my/img/radio-sabah-v.8109b1c6.jpg",Sabah VFM
 https://22273.live.streamtheworld.com/SABAH_VFMAAC
 
-#EXTINF:-1 tvg-id="CNA.sg" tvg-name="CNA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/CNA_logo.svg/512px-CNA_logo.svg.png" group-title="Berita",CNA Live
+#EXTINF:-1 tvg-id="CNA" group-title="BERITA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/CNA_logo.svg/512px-CNA_logo.svg.png",CNA Live
 https://ziqryadam86-collab.github.io/cna-live/cna.m3u8
