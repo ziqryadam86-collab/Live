@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPTV Player</title>
+    <title>IPTV Player Responsive</title>
 
     <!-- Plyr CSS -->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
@@ -21,49 +21,45 @@
             color: #ffffff;
             display: flex;
             flex-direction: column;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         header {
-            padding: 15px;
+            padding: 12px;
             background-color: #1f1f1f;
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
+            border-bottom: 1px solid #333;
         }
 
+        /* Susunan Asal untuk Telefon (Mobile First) */
         .container {
             display: flex;
-            flex: 1;
-            overflow: hidden;
             flex-direction: column;
-        }
-
-        @media (min-width: 768px) {
-            .container {
-                flex-direction: row;
-            }
+            width: 100%;
+            flex: 1;
         }
 
         .video-container {
-            flex: 2;
+            width: 100%;
             background-color: #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
-        .video-container video {
+        .plyr {
             width: 100%;
-            height: 100%;
+            max-height: 40vh; /* Hadkan tinggi video di telefon supaya senarai terpaparkan */
         }
 
         .playlist-container {
-            flex: 1;
+            width: 100%;
             background-color: #181818;
-            border-left: 1px solid #2a2a2a;
             display: flex;
             flex-direction: column;
+            flex: 1;
         }
 
         .playlist-header {
@@ -71,12 +67,30 @@
             background-color: #222;
             font-weight: bold;
             border-bottom: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #444;
+            background-color: #121212;
+            color: #fff;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: #00b3ff;
         }
 
         .playlist {
             list-style: none;
             overflow-y: auto;
-            flex: 1;
+            max-height: 50vh; /* Membolehkan skrol untuk senarai di telefon */
         }
 
         .playlist li {
@@ -102,6 +116,38 @@
             text-align: center;
             color: #aaa;
         }
+
+        /* Susunan Laluan Pintas untuk Skrin Lebar / PC (Desktop Layout) */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                height: calc(100vh - 45px);
+            }
+
+            .video-container {
+                flex: 3;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: static;
+            }
+
+            .plyr {
+                max-height: 100%;
+            }
+
+            .playlist-container {
+                flex: 1;
+                min-width: 300px;
+                max-width: 400px;
+                border-left: 1px solid #2a2a2a;
+            }
+
+            .playlist {
+                max-height: none;
+                flex: 1;
+            }
+        }
     </style>
 </head>
 <body>
@@ -116,7 +162,10 @@
 
         <!-- Senarai Playlist -->
         <div class="playlist-container">
-            <div class="playlist-header">Senarai Saluran</div>
+            <div class="playlist-header">
+                <span>Senarai Saluran</span>
+                <input type="text" id="searchInput" class="search-input" placeholder="Cari saluran (cth: Sabah VFM)...">
+            </div>
             <ul id="playlist" class="playlist">
                 <li class="loading">Sedang memuatkan senarai M3U...</li>
             </ul>
@@ -125,40 +174,42 @@
 
     <!-- Plyr JS -->
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-    <!-- HLS.js untuk mainkan stream .m3u8 -->
+    <!-- HLS.js untuk stream .m3u8 -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <!-- dash.js untuk mainkan stream .mpd -->
+    <!-- dash.js untuk stream .mpd -->
     <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
 
     <script>
         const m3uUrl = "https://ziqryadam86-collab.github.io/Live/Live.m3u";
         const video = document.getElementById("player");
         const playlistUI = document.getElementById("playlist");
+        const searchInput = document.getElementById("searchInput");
         
+        let allChannels = [];
+        let hlsPlayer = null;
+        let dashPlayer = null;
+
         // Inisialisasi Plyr
         const player = new Plyr(video, {
             controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen']
         });
 
-        let hlsPlayer = null;
-        let dashPlayer = null;
-
-        // Fungsi Load M3U
+        // Fetch dan parse fail M3U
         async function fetchAndParseM3U() {
             try {
                 const response = await fetch(m3uUrl);
                 if (!response.ok) throw new Error("Gagal mengambil fail M3U");
                 const data = await response.text();
                 
-                const channels = parseM3U(data);
-                renderPlaylist(channels);
+                allChannels = parseM3U(data);
+                renderPlaylist(allChannels);
             } catch (error) {
                 console.error(error);
-                playlistUI.innerHTML = `<li class="loading" style="color:red;">Gagal memuatkan M3U. Sila semak isu CORS atau pautan.</li>`;
+                playlistUI.innerHTML = `<li class="loading" style="color:red;">Gagal memuatkan M3U. Semak sekatan CORS atau URL.</li>`;
             }
         }
 
-        // Parse teks M3U
+        // Ekstrak data M3U
         function parseM3U(m3uText) {
             const lines = m3uText.split('\n');
             const channels = [];
@@ -167,11 +218,9 @@
             lines.forEach(line => {
                 line = line.trim();
                 if (line.startsWith('#EXTINF:')) {
-                    // Ambil nama saluran selepas koma
                     const titleMatch = line.split(',');
-                    currentChannel.name = titleMatch.length > 1 ? titleMatch.slice(1).join(',') : "Saluran Tanpa Nama";
+                    currentChannel.name = titleMatch.length > 1 ? titleMatch.slice(1).join(',').trim() : "Saluran Tanpa Nama";
                 } else if (line && !line.startsWith('#')) {
-                    // Line yang tidak bermula dengan # adalah URL stream
                     currentChannel.url = line;
                     channels.push(currentChannel);
                     currentChannel = {};
@@ -181,7 +230,7 @@
             return channels;
         }
 
-        // Render senarai ke HTML
+        // Papar senarai ke UI
         function renderPlaylist(channels) {
             playlistUI.innerHTML = '';
 
@@ -190,24 +239,29 @@
                 return;
             }
 
-            channels.forEach((channel, index) => {
+            channels.forEach((channel) => {
                 const li = document.createElement('li');
                 li.textContent = channel.name;
                 li.addEventListener('click', () => {
-                    // Tanda item aktif
                     document.querySelectorAll('#playlist li').forEach(el => el.classList.remove('active'));
                     li.classList.add('active');
-                    
-                    // Mainkan media
                     playStream(channel.url);
                 });
                 playlistUI.appendChild(li);
             });
         }
 
-        // Mainkan URL (Sama ada m3u8 atau mpd)
+        // Fungsi carian saluran
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredChannels = allChannels.filter(channel => 
+                channel.name.toLowerCase().includes(searchTerm)
+            );
+            renderPlaylist(filteredChannels);
+        });
+
+        // Mainkan URL (HLS / DASH / Native)
         function playStream(url) {
-            // Hentikan player sedia ada
             if (hlsPlayer) {
                 hlsPlayer.destroy();
                 hlsPlayer = null;
@@ -217,14 +271,11 @@
                 dashPlayer = null;
             }
 
-            // Semak jenis stream
             if (url.includes('.mpd')) {
-                // Gunakan Dash.js untuk .mpd
                 dashPlayer = dashjs.MediaPlayer().create();
                 dashPlayer.initialize(video, url, true);
             } else if (url.includes('.m3u8') || Hls.isSupported()) {
-                // Gunakan Hls.js untuk .m3u8
-                if (HLSjsIsSupported(url)) {
+                if (Hls.isSupported()) {
                     hlsPlayer = new Hls();
                     hlsPlayer.loadSource(url);
                     hlsPlayer.attachMedia(video);
@@ -232,24 +283,17 @@
                         video.play();
                     });
                 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    // Sokongan native Safari
                     video.src = url;
                     video.play();
                 }
             } else {
-                // Fallback untuk media biasa (MP4, dll)
                 video.src = url;
                 video.play();
             }
         }
 
-        function HLSjsIsSupported(url) {
-            return Hls.isSupported() && (url.includes('.m3u8') || !url.includes('.mpd'));
-        }
-
-        // Muat M3U semasa halaman siap dibuka
         fetchAndParseM3U();
     </script>
 </body>
-    </html>
-    
+            </html>
+                    
