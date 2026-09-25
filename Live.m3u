@@ -335,3 +335,6 @@ https://ziqryadam86-collab.github.io/cna-live/cna.m3u8
 
 #EXTINF:-1 tvg-id="BeritaRTM" tvg-name="Berita RTM" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d2/Berita_RTM_logo_2020.png" group-title="BERITA",Berita RTM
 https://ziqryadam86-collab.github.io/rtm-live/smil:berita/index.m3u8
+
+#EXTINF:-1 tvg-id="Bernama" tvg-name="Berita RTM" tvg-logo="" group-title="BERITA",Bernama tv
+https://ziqryadam86-collab.github.io/bernama-tv/smil:bernama/pass:bernama24/playlist.m3u8
