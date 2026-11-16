@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720
+https://api.dani-dev.co.za/v1/stream/tonton/live/tv9
