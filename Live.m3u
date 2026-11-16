@@ -15,7 +15,6 @@ https://linearjitp-playback.astro.com.my/dash-wv/linear/911/default_primary.mpd
 
 #EXTM3U
 #EXTINF:-1 tvg-id="TV9" tvg-name="TV9 Malaysia" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_rxDaa2aWR1kKTf7VTjHDEuRdVL8i_WTs_1TgoPGyMsrJ5g&s" group-title="ASTRO",TV9
-#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720
 https://api.dani-dev.co.za/v1/stream/tonton/live/tv9
 
 #EXTINF:-1 group-title="ASTRO" tvg-id="TVAlhijrah" tvg-name="TvAlhijrah" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQECkPc3L_txpZrTEmLD9CeEMM7tVdEhXdtoAM-_aZWEP8nImIKJVR_AUQ6Pg&s", Tv Alhijrah
