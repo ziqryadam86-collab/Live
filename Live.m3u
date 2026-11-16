@@ -7,13 +7,16 @@ https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro
 #EXTINF:-1 tvg-id="8TV" tvg-name="8TV" group-title="ASTRO",8TV
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=8tv/number=148/index.m3u8
 
-#EXTINF:-1 group-title="8TV" tvg-id="8TV" tvg-name="8TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTouyEwKEUcFT3p2wz1ElZpzlM_4UQiK9zNDv6i8IDD3P1AOTjm0BucNXBRXrY&s",8TV
+#EXTINF:-1 group-title="ASTRO" tvg-id="8TV" tvg-name="8TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTouyEwKEUcFT3p2wz1ElZpzlM_4UQiK9zNDv6i8IDD3P1AOTjm0BucNXBRXrY&s",8TV
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"0cb7980e9d1d8957f9a293ed96342410": "11da1ad368d0cacffe4824b6b35e22b7"}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; CPH1819 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.99 Mobile Safari/537.36
 https://linearjitp-playback.astro.com.my/dash-wv/linear/911/default_primary.mpd
 
-#EXTINF:-1 group-title="TVALHINRAH" tvg-id="TVAlhijrah" tvg-name="TvAlhijrah" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQECkPc3L_txpZrTEmLD9CeEMM7tVdEhXdtoAM-_aZWEP8nImIKJVR_AUQ6Pg&s", Tv Alhijrah
+#EXTINF:-1 tvg-id="TV9" tvg-name="TV9" tvg-logo="https://enenes.github.io/ottNav2/logo/TV9.png" group-title="ASTRO",TV9
+https://api.dani-dev.co.za/v1/stream/tonton/live/tv9
+
+#EXTINF:-1 group-title="ASTRO" tvg-id="TVAlhijrah" tvg-name="TvAlhijrah" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQECkPc3L_txpZrTEmLD9CeEMM7tVdEhXdtoAM-_aZWEP8nImIKJVR_AUQ6Pg&s", Tv Alhijrah
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"41a42fb5af457501c11bb9b158d5a110": "57a8d6f9e3832887db18ea6071118736"}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; CPH1819 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.99 Mobile Safari/537.36
@@ -53,7 +56,7 @@ https://raw.githubusercontent.com/MIFNtechnology/YtM3u8/github-private/assets/in
 #EXTMY: {"inputstream.adaptive.manifest_type":"mpd"}
 https://ziqryadam86-collab.github.io/Live/pass=860821/user=adamlive/brands=astro/search=nickjr/number=636/index.mpd
 
-#EXTINF:-1 group-title="TV3" tvg-id="TV3" tvg-name="TV3" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_oM5CTfyE07OH0m5CefRxR_EiHZrVQvcqZlujISJ6vfOIANM&s",TV3
+#EXTINF:-1 group-title="ASTRO" tvg-id="TV3" tvg-name="TV3" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_oM5CTfyE07OH0m5CefRxR_EiHZrVQvcqZlujISJ6vfOIANM&s",TV3
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"3bc3f0e518aed92e80a98118e5bc2c10": "5fce364fbc4499856597b19a96f44648"}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; CPH1819 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.99 Mobile Safari/537.36
@@ -64,7 +67,7 @@ https://d25tgymtnqzu8s.cloudfront.net/main/A0jyR3/master.m3u8?id=1
 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36
 #EXTVLCOPT:http-referrer=https://rtmklik.rtm.gov.my/
-#EXTINF:-1 group-title="RTM" ch-number="RTMK03" tvg-id="RTMK03" tvg-chno="RTMK03" tvg-logo="http://rtm.samsam123.tk/Channel%20Logo/TV%20Okey.jpg",TV Okey [HLS]
+#EXTINF:-1 group-title="ASTRO" ch-number="RTMK03" tvg-id="RTMK03" tvg-chno="RTMK03" tvg-logo="http://rtm.samsam123.tk/Channel%20Logo/TV%20Okey.jpg",TV Okey [HLS]
 https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=3
 
 #EXTINF:-1 tvg-id="OKEY" tvg-name="OKEY" group-title="ASTRO",OKEY (Direct Stream)
